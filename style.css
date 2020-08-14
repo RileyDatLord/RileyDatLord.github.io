@@ -25,6 +25,40 @@ body::-webkit-scrollbar-thumb {
     background: #83b5de;
 }
 
+.cover {
+    background-color: rgb(55, 0, 71);
+    color: rgba(55, 0, 71);
+    opacity: 100%;
+
+    width:100vw;
+    height:100vh;
+
+    z-index: 5;
+    position: fixed;
+
+    transition: opacity 1000ms ease;
+
+    animation: fadeOut;
+    animation-duration: 2000ms;
+    animation-delay: 500ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+    display: flex;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 100%;
+        display: flex;
+    } to {
+        opacity: 0%;
+    }
+    100% {
+        display: none;
+    }
+}
+
 .background {
     position: absolute;
 }
