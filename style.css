@@ -1,16 +1,20 @@
 :root {
     font-size: 16px;
     font-family: sans-serif;
+
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
+
     --bg-primary: #5D2E46;
     --bg-secondary: #C492B1;
+
     --transition-speed: 200ms;
 }
 
 body {
     color: black;
     background-color: white;
+    
     margin: 0;
     padding: 0;
 }
@@ -65,13 +69,16 @@ body::-webkit-scrollbar-thumb {
 
 .background {
     content: "";
+
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
+
     background-image: url('./images/mc.png');
     background-size: 2500px;
     background-position-x: 50%;
     background-position-y: 50%;
+
     filter: grayscale(10%) blur(2px);
 }
 
@@ -84,13 +91,17 @@ body::-webkit-scrollbar-thumb {
     width: 5rem;
     height: 100vh;
     position: fixed;
+
     background-color: var(--bg-primary);
+
     transition: width var(--transition-speed) ease, opacity 200ms ease;
+
     z-index: 1;
 }
 
 .navbar-nav {
     list-style: none;
+
     padding: 0;
     margin-top: 0;
     display: flex;
@@ -108,8 +119,10 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     height: 5rem;
+
     text-decoration: none;
     filter: grayscale(20%) opacity(0.8);
+
     transition: filter var(--transition-speed) ease, background 250ms ease;
 }
 
@@ -138,9 +151,6 @@ body::-webkit-scrollbar-thumb {
     display: block;
 }
 
-
-
-
 .title {
     color: #e6d3f1;
     filter: opacity(1);
@@ -158,9 +168,11 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-50%);
 
     background: rgb(196, 146, 177, 0.75);
-    text-align: center;
-    z-index: 0;
-    filter: opacity(1);
     border-top: 8px solid rgb(93, 46, 70, 0.5);
     border-bottom: 8px solid rgb(93, 46, 70, 0.5);
+
+    filter: opacity(1);
+
+    text-align: center;
+    z-index: 0;
 }
