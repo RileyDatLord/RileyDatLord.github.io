@@ -1,0 +1,133 @@
+:root {
+    font-size: 16px;
+    font-family: sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #5D2E46;
+    --bg-secondary: #C492B1;
+    --transition-speed: 200ms;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+    background: #83b5de;
+}
+
+.background {
+    position: absolute;
+}
+
+.background {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('./images/mc.png');
+    background-size: 2500px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    filter: grayscale(10%) blur(2px);
+}
+
+.main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width var(--transition-speed) ease, opacity 200ms ease;
+    z-index: 1;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* .nav-item:last-child {
+    margin-top: auto;
+} */
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    filter: grayscale(20%) opacity(0.8);
+    transition: filter var(--transition-speed) ease, background 250ms ease;
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.link-text {
+    color: rgb(182, 182, 182, 1);
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover {
+    width: 14rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+
+
+
+.title, .subtitle {
+    color: #350000;
+    filter: opacity(1);
+}
+
+.titles {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin: 0 -50%;
+    transform: translateY(-50%);
+
+    background: rgb(196, 146, 177, 0.75);
+    text-align: center;
+    z-index: 0;
+    filter: opacity(1);
+    border-top: 8px solid rgb(93, 46, 70, 0.5);
+    border-bottom: 8px solid rgb(93, 46, 70, 0.5);
+}
