@@ -107,9 +107,12 @@ body::-webkit-scrollbar-thumb {
 
 
 
-.title, .subtitle {
-    color: #350000;
+.title {
+    color: #e6d3f1;
     filter: opacity(1);
+}
+.subtitle {
+    color: #860d72
 }
 
 .titles {
