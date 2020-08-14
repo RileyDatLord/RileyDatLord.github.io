@@ -42,12 +42,10 @@ body::-webkit-scrollbar-thumb {
     z-index: 3;
     position: fixed;
 
-    transition: opacity 1000ms ease;
-
     animation: fadeOut;
-    animation-duration: 2000ms;
-    animation-delay: 500ms;
-    animation-timing-function: ease;
+    animation-duration: 1000ms;
+    animation-delay: 700ms;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
 
     display: flex;
@@ -58,10 +56,13 @@ body::-webkit-scrollbar-thumb {
         opacity: 100%;
         display: flex;
     } to {
-        z-index: 0;
         opacity: 0%;
     }
+    99.99% {
+        z-index: 3;
+    }
     100% {
+        z-index: 0;
         display: none;
     }
 }
