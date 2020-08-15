@@ -140,12 +140,12 @@ body::-webkit-scrollbar-thumb {
   margin-left: 1rem;
 }
 
-.nav-link svg {
-  min-width: 2rem;
-  margin: 0 1.5rem;
-}
-
 @media (min-width: 800px) {
+  .nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+  }
+
   .navbar:hover {
     width: 14rem;
   }
@@ -189,22 +189,32 @@ body::-webkit-scrollbar-thumb {
 /* MOBILE STYLING */
 
 @media (max-width: 800px) {
+  .nav-link svg {
+    min-width: 2rem;
+    margin: 0 auto;
+  }
+
   .navbar {
     width: 100%;
     height: 5rem;
   }
 
   .navbar .link-text {
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    align-content: space-around;
     display: none;
   }
 
   .navbar-nav {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .nav-item {
     margin: auto auto;
-    margin-left: 10px;
+    justify-content: space-around;
+    align-content: center;
   }
 }
