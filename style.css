@@ -195,7 +195,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .navbar .link-text {
-    display: block;
+    display: none;
   }
 
   .navbar-nav {
@@ -204,10 +204,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .nav-item {
-    margin-top: auto;
-  }
-
-  .link-text {
-    margin-left: 0;
+    margin: auto auto;
+    margin-left: 10px;
   }
 }
